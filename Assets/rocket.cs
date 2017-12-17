@@ -26,12 +26,11 @@ public class rocket : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.A))
         {
-            print("Port Thrust");
+            transform.Rotate(Vector3.forward);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            print("Starboard Thrust");
+            transform.Rotate(Vector3.back);
         }    
-                
     }
 }
